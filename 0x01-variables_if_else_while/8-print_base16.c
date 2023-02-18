@@ -1,19 +1,23 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
-*main - Prints the alphabet in lowercase
-*
-*Return: 0 if success
-**/
+ * main - prints all number of base 16.
+ *
+ * Return: 0 on success
+ */
 int main(void)
 {
-	char d = 'a';
+	int i = '0';
 
-	while (d <= 'z')
+	while (i <= '9')
 	{
-	putchar(d);
-	d++;
+		putchar(i);
+		i++;
+	}
+	i = 'a';
+	while (i <= 'f')
+	{
+		putchar(i);
+		i++;
 	}
 	putchar('\n');
 	return (0);
